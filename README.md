@@ -2,7 +2,7 @@
 
 > Bitcoin transaction output builder
 
-![bitpacket](bitpacket.png)
+![bitpacket](bitpacket.webp)
 
 bitpacket is a minimal JavaScript library for declaratively creating:
 
@@ -24,11 +24,10 @@ You can use bitpacket to build bitcoin output scripts or unsigned transactions, 
 
 Bitpacket only deals with output scripts, which means you can use it to build outputs or unsigned transactions, and then incorporate them into existing wallet workflow.
 
-You can think of Bitpacket as a library laser-focused on the "output" side of what [Paydata](https://github.com/samooth/paydata) used to do.
+You can think of Bitpacket as a library laser-focused on the "output" side of what [Paydata](https://github.com/samooth/paydata) does.
 
 1. **Minimal:** Because it focuses only on outputs, it has gotten rid of the input-side API dependencies.
-2. **Pluggable:** Because it's powered by the new [bsv2](https://github.com/samooth/bsv) and generates the bsv transaction and script objects, you can use it to construct an object, and pass it to another function which uses the `bsv` library directly. bitpacket even exposes the `bitpacket.bsv` object as one of its attributes so you can just use `bitpacket` instead of including both `bitpacket` and `bsv`.
-cies as well as provide much more powerful focused features just for building outputs.
+2. **Pluggable:** Because it's powered by the new [bsv2](https://github.com/samooth/bsv) and generates the bsv transaction and script objects, you can use it to construct an object, and pass it to another function which uses the `bsv` library directly. bitpacket even exposes the `bitpacket.bsv` object as one of its attributes so you can just use `bitpacket` instead of including both `bitpacket` and `bsv.Ecies` [docs](https://bsv.direct/docs/bsv.js/ecies.html) as well as provide much more powerful focused features just for building outputs.
 3. **Wallet Compatible:** bitpacket fits into existing workflow easily. Most bitcoin app use cases delegate the **transaction input building** to 3rd party Bitcoin wallets anyway. You can simply use Bitpacket to build an unsigned transaction or bitcoin output scripts, and pass to wallet libraries to build fully signed transactions.
 
 ---
