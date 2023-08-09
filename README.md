@@ -27,7 +27,7 @@ Bitpacket only deals with output scripts, which means you can use it to build ou
 You can think of Bitpacket as a library laser-focused on the "output" side of what [Paydata](https://github.com/samooth/paydata) used to do.
 
 1. **Minimal:** Because it focuses only on outputs, it has gotten rid of the input-side API dependencies.
-2. **Pluggable:** Because it's powered by the new [bsv2 2.0.13](https://github.com/samooth/bsv) and generates the bsv transaction and script objects, you can use it to construct an object, and pass it to another function which uses the `bsv` library directly. bitpacket even exposes the `bitpacket.bsv` object as one of its attributes so you can just use `bitpacket` instead of including both `bitpacket` and `bsv`.
+2. **Pluggable:** Because it's powered by the new [bsv2](https://github.com/samooth/bsv) and generates the bsv transaction and script objects, you can use it to construct an object, and pass it to another function which uses the `bsv` library directly. bitpacket even exposes the `bitpacket.bsv` object as one of its attributes so you can just use `bitpacket` instead of including both `bitpacket` and `bsv`.
 cies as well as provide much more powerful focused features just for building outputs.
 3. **Wallet Compatible:** bitpacket fits into existing workflow easily. Most bitcoin app use cases delegate the **transaction input building** to 3rd party Bitcoin wallets anyway. You can simply use Bitpacket to build an unsigned transaction or bitcoin output scripts, and pass to wallet libraries to build fully signed transactions.
 
@@ -37,7 +37,7 @@ cies as well as provide much more powerful focused features just for building ou
 
 ## 1. bsv2
 
-Uses the new and lean [bsv2 2.0.13](https://github.com/samooth/bsv) instead of the old deprecated version.
+Uses the new and lean [bsv2](https://github.com/samooth/bsv) instead of the old deprecated version.
 
 ## 2. only output
 

@@ -1,0 +1,35 @@
+{
+  "name": "@samooth/bitpacket",
+  "version": "0.0.2",
+  "description": "Create & Inspect Scripts and Txs from TXO format",
+  "main": "dist/bitpacket.cjs.js",
+  "module": "dist/bitpacket.module.js",
+  "unpkg": "dist/bitpacket.bundle.js",
+  "library": "bitpacket",
+  "scripts": {
+  },
+  "keywords": [
+    "bsv",
+    "bitcoinsv",
+    "bitcoin",
+    "blockchain",
+    "cryptocurrency"
+  ],
+  "author": "@samooth",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "bsv2": "^2.0.13"
+
+  },
+  "devDependencies": {
+    "crypto-browserify": "^3.12.0",
+    "stream-browserify": "^3.0.0",
+    "webpack-cli": "^5.1.4",
+    "buffer": "^6.0.3",
+    "process": "^0.11.10",
+    "util": "^0.12.5"
+  }
+}
